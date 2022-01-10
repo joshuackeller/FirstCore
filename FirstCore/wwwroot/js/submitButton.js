@@ -13,4 +13,5 @@ $('#submitButton').click(
             " Subject: " + $("#textSubject").val() +
             " Message: " + $("#textMessage").val());
         $("#picAnderson").fadeToggle('slow');
+        alert('hello')
     });
