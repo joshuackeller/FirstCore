@@ -15,3 +15,25 @@ textarea {
 li {
     list-style-type: none;
 }
+
+.translate {
+    height: 100px;
+    width: 100px;
+    transition: 0s;
+    animation: doge 2s linear infinite;
+    -webkit-animation: doge 2s linear infinite; /* Chrome, Safari 5 */
+    -moz-animation: doge 2s linear infinite; /* Firefox 5-15 */
+    -o-animation: doge 2s linear infinite; /* Opera 12+ */
+    animation: doge 2s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+}
+
+@keyframes doge {
+    from {
+        transform: translateX(0px) translateY(100px);
+    }
+
+    to {
+        transform: translateX(150px) translateY(0px);
+    }
+}

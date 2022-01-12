@@ -2,35 +2,66 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Prof. Ganderson Fan Club</title>
+    <title>Doge Much Moon</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <!--Import bootstrap css-->
     <link rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css" />
 </head>
 <body>
-    <h1 >Prof. Ganderson Fan Site</h1>
-    <img id="picAnderson" src="/images/anderson.png" height="200"/>
-    <p >Professor Anderson (AKA Prof. Ganderson) is a Professor in the Information Systems departement at BYU</p>
-    <br/>
+    <!--Header, Image, and Description-->
+    <h1>Josh Keller</h1>
+    <img id="picAnderson" src="/images/keller.JPG" height="200" />
+    <p>This is me hanging out with my nephew, Ezra. Defintely my favorite pastime right now.</p>
+    <br />
 
-    <p>Pop Quiz: We love him because</p>
-    <ul>
-        <li>A: The flowing locks he had when he was younger</li>
-        <li>B: He can pound a pound of bacon</li>
-        <li>C: His exams are so easy</li>
-        <li>D: he is just an awesome person who cares about everybody around him</li>
-        <li>E: All of the above</li>
-    </ul>
+    <!--What I hope to get out of this class-->
+    <p>
+        In this class, I hope to add to my knowledge of web programming. I already know a decent amount about
+        web development, but I've never used ASP.NET Core. I think learning a new framework will help me better
+        understand all aspects of web development. I'm especially excited to learn more about building backends.
+    </p>
 
-    <h2>Send Him Fan Mail</h2>
+
+    <!--Preferred jobs section-->
+    <h4>Top 3 Preferred Jobs</h4>
+    <ol>
+        <li>1. Intern for Kramerica Industries</li>
+        <li>2. Latex Salesman for Vandelay Industries</li>
+        <li>3. Importer/Exporter</li>
+    </ol>
+
+    <!--Grade Calculator Section. Logic is found in submitButton.js-->
+    <h2>Grade Calculator</h2>
     <form>
-        <label>From:</label><br/>
-        <input id="textFrom" type="text"/><br/>
-        <label>Subject:</label><br />
-        <input id="textSubject" type="text"/><br/>
-        <label>Message:</label><br />
-        <textarea id="textMessage" rows="4"></textarea><br/>
-        <input id="submitButton" type="submit" value="Send Message"/>
+        <label class="form-label">Assignments 55</label><br />
+        <input type="text" id="assignments" /><br />
+
+        <label>Group Project 5</label><br />
+        <input type="number" id="groupProject" /><br />
+
+        <label>Quizzes 10</label><br />
+        <input type="number" id="quizzes" /><br />
+
+        <label>Exams 20</label><br />
+        <input type="number" id="exams" /><br />
+
+        <label>Intex 10</label><br />
+        <input type="number" id="intex" /><br />
+        <!--The btn and btn-primary classes come from bootstrap-->
+        <button class="btn btn-primary" style="margin-top: 20px;" id="submitButton" type="submit" value="Calculate">Calculate</button>
     </form>
+
+    <!--CSS Animation. Styling is found in styles.css-->
+    <div>
+        <p>I hope enjoy my CSS styling! Doge to the Moon!</p>
+    </div>
+    <div style="display: flex; justify-items: center; height: 400px; margin-top: 20px;">
+        <img style="transform: translateX(300px); height: 100px;" src="/images/moon.png"/>
+        <img src="/images/doge.png" class="translate btn"/>
+    </div>
+    
+
+    <!--Scripts: Bootstrap, jquery, submitButton (custom)-->
     <script src="/library/bootstrap/js/boostrap.min.js"></script>
     <script src="/library/jquery/jquery.js"></script>
     <script src="/js/submitButton.js"></script>
