@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Doge Much Form";
+}
+
+@model Form;
+
+
+
+    <!--Grade Calculator Section. Logic is found in submitButton.js-->
+    <h2>Grade Calculator</h2>
+    <form method="post">
+        <label class="form-label">Assignments 55</label><br />
+        <input asp-for="Assignments" id="assignments" /><br />
+
+        <label>Group Project 5</label><br />
+        <input asp-for="GroupProject" id="groupProject" /><br />
+
+        <label>Quizzes 10</label><br />
+        <input asp-for="Quizzes" id="quizzes" /><br />
+
+        <label>Exams 20</label><br />
+        <input asp-for="Exams" id="exams" /><br />
+
+        <label>Intex 10</label><br />
+        <input asp-for="Intex" id="intex" /><br />
+        <!--The btn and btn-primary classes come from bootstrap-->
+        <input type="submit" class="btn btn-primary" style="margin-top: 20px;" id="submitButton" value="Calculate" />
+
+        <div asp-validation-summary="All"></div>
+
+    </form>
+
+
+
+
+

@@ -1,8 +1,8 @@
 ﻿
 $('#submitButton').click(
-    (e) => {
+    () => {
         // Keep browser from refreshing
-        e.preventDefault();
+
         // Calculate Grade
         const grade = ($("#assignments").val() * .55) +
             ($("#groupProject").val() * .05) +
@@ -47,7 +47,7 @@ $('#submitButton').click(
         else{
             letterGrade = 'E'
         }
-        // Send alert to display final percent and letter grade
         alert('Final Percent: ' + grade.toFixed(2)
               + '\n Letter Grade: ' + letterGrade);
     });
+
